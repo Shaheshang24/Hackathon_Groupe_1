@@ -1,0 +1,234 @@
+body {
+    background-color: rgb(255, 102, 0);
+    margin: 0;
+    padding: 0;
+}
+
+/* -----MENU----- */
+nav {
+    width: 100vw;
+    height: 10vh;
+    color: white;
+    background-color: rgb(184, 101, 201);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    margin: 0;
+    width: 20vw;
+    text-align: center;
+}
+
+#menu {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.menuopen {
+    margin-left: 0;
+}
+
+@media (max-width:700px) {
+    nav {
+        width: 40vw;
+        height: 50vh;
+        flex-direction: column;
+        margin-left: -40vw;
+        transition: 1s;
+
+    }
+
+    #menu {
+        flex-direction: column;
+        padding: 0;
+        height: 70%;
+    }
+
+    #logo {
+        text-align: end;
+    }
+
+    #burger {
+        display: block;
+    }
+
+}
+
+/* -----BURGER----- */
+
+#burger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+
+}
+
+#burger span {
+    position: absolute;
+    height: 5px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: chartreuse;
+}
+
+#burger span:nth-child(1) {
+    top: 0;
+}
+
+#burger span:nth-child(2) {
+    top: 15px;
+}
+
+#burger span:nth-child(3) {
+    top: 30px;
+}
+
+.spantopopen {
+    animation-name: spantopopen;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.spancenteropen {
+    animation: spancenteropen;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.spanbotopen {
+    animation: spanbotopen;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spantopopen {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 15px;
+        transform: rotate(0);
+        ;
+    }
+
+    100% {
+        top: 15px;
+        transform: rotate(45deg);
+    }
+
+}
+
+@keyframes spancenteropen {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+@keyframes spanbotopen {
+    0% {
+        top: 30px;
+    }
+
+    50% {
+        top: 15px;
+        transform: rotate(0);
+        ;
+    }
+
+    100% {
+        top: 15px;
+        transform: rotate(-45deg);
+    }
+
+}
+
+.spantopclose {
+    animation-name: spantopclose;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.spancenterclose {
+    animation: spancenterclose;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.spanbotclose {
+    animation: spanbotclose;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spantopclose {
+    0% {
+        top: 15px;
+        transform: rotate(45deg);
+    }
+
+    50% {
+        top: 15px;
+        transform: rotate(0);
+        ;
+    }
+
+    100% {
+        top: 0;
+    }
+
+}
+
+@keyframes spancenterclose {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes spanbotclose {
+    0% {
+        top: 15px;
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        top: 15px;
+        transform: rotate(0);
+        ;
+    }
+
+    100% {
+        top: 30px;
+    }
+
+}
+
+/* -----END BURGER----- */
+
+/* -----END MENU----- */
