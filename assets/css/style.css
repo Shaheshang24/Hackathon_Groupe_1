@@ -37,36 +37,12 @@ nav {
     margin-left: 0;
 }
 
-@media (max-width:700px) {
-    nav {
-        width: 40vw;
-        height: 50vh;
-        flex-direction: column;
-        margin-left: -40vw;
-        transition: 1s;
 
-    }
-
-    #menu {
-        flex-direction: column;
-        padding: 0;
-        height: 70%;
-    }
-
-    #logo {
-        text-align: end;
-    }
-
-    #burger {
-        display: block;
-    }
-
-}
 
 /* -----BURGER----- */
 
 #burger {
-    display: block;
+    display: none;
     position: absolute;
     top: 20px;
     left: 20px;
@@ -233,5 +209,31 @@ nav {
 }
 
 /* -----END BURGER----- */
+
+@media (max-width:700px) {
+    nav {
+        width: 40vw;
+        height: 50vh;
+        flex-direction: column;
+        margin-left: -40vw;
+        transition: 1s;
+
+    }
+
+    #menu {
+        flex-direction: column;
+        padding: 0;
+        height: 70%;
+    }
+
+    #logo {
+        text-align: end;
+    }
+
+    #burger {
+        display: block;
+    }
+
+}
 
 /* -----END MENU----- */
