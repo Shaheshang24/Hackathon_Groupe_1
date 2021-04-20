@@ -17,7 +17,7 @@ body {
 .products {
     height: 100vh; 
 }
-.title-product {
+.title-product, h2 {
     text-align: center;
 }
 .slider-product {
