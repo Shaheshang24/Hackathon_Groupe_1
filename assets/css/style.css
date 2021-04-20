@@ -7,22 +7,24 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
+
 /* -----MENU----- */
 
 nav {
     width: 100vw;
     height: 10vh;
     color: white;
-    background-color: rgb(192, 125, 0);
+    background-color: rgb(223, 223, 223);
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 #logo {
-    margin: 0;
-    width: 20vw;
-    text-align: center;
+    max-height: 80%;
+}
+nav>ul>li>ul {
+    list-style: none;
 }
 
 #menu {
@@ -240,13 +242,20 @@ nav {
 
 /* -----END MENU----- */
 
-/* -----SECTION----- */
+/* -----HEADER----- */
 
-section {
-    height: 80vh;
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(250, 250, 250,0.7);
+    font-size:18vw;
+    text-align: center;
+
 }
 
-/* -----END SECTION----- */
+/* -----END HEADER----- */
 
 
 /* -----FOOTER----- */
