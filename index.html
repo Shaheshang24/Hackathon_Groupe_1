@@ -43,10 +43,9 @@
     <!-- HEADER -->
     <header>
         <h1>Online Bio</h1>
-        <!-- <video autoplay src="assets/video/video.mp4" loop width="100%"></video> -->
+        <video autoplay src="assets/video/video.mp4" loop width="100%"></video>
     </header>
     <!-- HEADER -->
-<<<<<<< HEAD
 
     <!-- PRESENTATION -->
     <section id="presentation"></section>
@@ -66,29 +65,78 @@
             <img src="./assets/img/pictoproduit.png" alt="picto produits">
             <h2>Nos produits</h2>
         </div>
-        <div class="slider-product">
-            <!-- Image slider start -->
-            <div class="img-product-slider">
-                <div class="slide-product actives">
-                    <div class="info-product">
-                        <h2>Amandes</h2>
-                        <h5>Provenance : Picardie (35)</h5>
-                        <p>Chez Michel Martin, retrouvez les meilleurs amandes de la région !</p>
-                    </div>
-                    <div class="polaroids">
-                        <a href="https://www.online-bio.fr/product-category/epicerie/" title="Amandes">
-                           <img src="./assets/img/Amandes2.jpg" alt="Amandes"/>
-                       </a>
-                    </div>
+        <ul class="slides">
+            <input type="radio" name="radio-btn" id="img-1" checked />
+            <li class="slide-container">
+              <div class="slide">
+                <div class="content">
+                  <h3>Les Amandes</h3>
+                  <h4>de Provence</h4>
+                  <p>Cultivées sous le soleil des maquis provençaux, les amandes bio apporteront du croquant a vos salade et de la saveur à vos desserts.... </p>
+          
+                  <div class="polaroids">
+                    <a href="https://www.online-bio.fr/product-category/epicerie/" title="Amandes">
+                      <img src="assets/img/Amandes2.jpg" alt="Amandes" />
+                      <h4>Amandes</h4>
+                    </a>
+                  </div>
                 </div>
-            </div>
-            <!-- Image slider end -->
-        </div>
+          
+              </div>
+              <div class="nav">
+              </div>
+            </li>
+          
+            <input type="radio" name="radio-btn" id="img-2" />
+            <li class="slide-container">
+              <div class="slide">
+                <div class="content">
+                    <h3>Les Asperges <br> vertes</h3>
+                    <h4>des Landes</h4>
+                    <p>Aimées pour leur finesse, adorées pour leur fondant. Elle savent se mettre au coup des petits et des grands gourmands.</p>
+            
+                    <div class="polaroids">
+                      <a href="https://www.online-bio.fr/product/asperge-verte-250g/" title="Asperges">
+                        <img src="assets/img/aspergesvertes.jpg" alt="Asperges vertes" />
+                        <h4>Asperges Vertes</h4>
+                      </a>
+                    </div>
+                  </div>
+              </div>
+              <div class="nav">
+              </div>
+            </li>
+          
+            <input type="radio" name="radio-btn" id="img-3" />
+            <li class="slide-container">
+              <div class="slide">
+                <div class="content">
+                    <h3>L'Ail</h3>
+                    <h4>du Loir-et-Cher</h4>
+                    <p>Sa belle robe rose et son gout prononcé envouteront vos plats et vos convives.</p>
+            
+                    <div class="polaroids">
+                      <a href="https://www.online-bio.fr/product/ail/" title="Ail">
+                        <img src="assets/img/Ail2.jpg" alt="Ail" />
+                        <h4>l'Ail</h4>
+                      </a>
+                    </div>
+                  </div>
+              </div>
+              <div class="nav">
+              </div>
+            </li>
+          
+            <li class="nav-dots">
+              <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+              <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+              <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+            </li>
     </section>
     <!-- END PRODUCTS -->
 
     <!-- RECIPES -->
-    <section id="recipes"><div class="title-recipes">
+    <section class="recipes"><div class="title-recipes">
         <img src="./assets/img/pictocuisine.png" alt="picto cuisine">
         <h2 class="title">Recettes du jour</h2>
     </div>
