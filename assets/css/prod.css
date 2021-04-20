@@ -1,0 +1,32 @@
+h1 {
+    justify-content: center;
+    display: flex;
+}
+/**lienImg**/
+.producteurs {
+    display: flex;
+    justify-content: center;
+
+}
+.pro1 {
+    width: 150px ;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15%;
+}
+/********/
+.para {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.troisPics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.troisPics img {
+    width: 25%;
+}
