@@ -58,12 +58,21 @@ let suggestions = [
 
 const searchWrapper = document.querySelector(".search-input");
 const inputBox = searchWrapper.querySelector("input");
-const suggBox = searchWrapper.querySelector(".autocom-box");
+const suggBox = searchWrapper.querySelector(".dropdown");
+const icon = searchWrapper.querySelector(".icon");
+let linkTag = searchWrapper.querySelector("a");
+let webLink;
 
 inputBox.onkeyup = (e)=>{
   let userData = e.target.value; 
   let emptyArray = [];
   if(userData){
+    icon.onclick = ()=>{
+      webLink = "https://www.google.com/search?q=" + userData;
+      linkTag.setAttribute("href", webLink);
+      console.log(webLink);
+      linkTag.click();
+  }
     emptyArray = suggestions.filter((data) =>{
       return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
     });

@@ -331,19 +331,19 @@ body {
     color: rgba(0, 0, 0, 0.582);
     cursor: pointer;
 }
-.search-input .autocom-box {
+.search-input .dropdown {
     padding: 0px;
     max-height: 280px;
     overflow-y: auto;
     opacity: 0;
     pointer-events: none;
 }
-.search-input.active .autocom-box{
+.search-input.active .dropdown{
     padding: 10px 8px;
     opacity: 1;
     pointer-events: auto;
 }
-.autocom-box li {
+.dropdown li {
     list-style: none;
     padding: 8px 12px;
     width: 100%;
@@ -351,10 +351,10 @@ body {
     border-radius: 3px;
     display: none;
 }
-.search-input.active .autocom-box li {
+.search-input.active .dropdown li {
     display: block;
 }
-.autocom-box li:hover {
+.dropdown li:hover {
     background: #efefef;
 }
 .titlerecipe {
@@ -367,15 +367,91 @@ body {
     padding-bottom: 15px;
 }
 .titlerecipe img {
-    width: 450px;
+    width: 70vw;
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 50px;
 }
 .underpicture {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
 }
 .underpicture h3, p {
     text-align: center;
 }
+.ingredients {
+    background: #d6b07f;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.ingredients h3 {
+    padding: 20px;
+    font-weight: 500;
+}
+.pictorecipes {
+    text-align: center;
+}
+.list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.list li {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    justify-content: space-evenly;
+}
+.list li img {
+    height: 70px;
+}
+.list li p {
+    padding-left: 10px;
+}
+#fish {
+    width: 125px;
+}
+.prep {
+    padding: 40px;
+}
+.prep h3 {
+    padding: 20px;
+    font-weight: 500;
+}
+.prep h4 {
+    font-weight: 700;
+    padding: 5px;
+}
+.prep p {
+    text-align: start;
+    padding-bottom: 10px;
+}
+
+/* MEDIA QUERIES PAGE RECIPES */
+@media (max-width: 780px) {
+    .underpicture .pictorecipes img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 780px) {
+    .underpicture .pictorecipes img {
+        width: 50px;
+    }
+    .pictorecipes h3, p {
+        font-size: 10px;
+    }
+    .list li img {
+        height: 40px;
+    }
+    .flex-search {
+        height: 30vh;
+    }
+}
+
+/***********************************/
+/***********************************/
+/***********************************/
