@@ -855,49 +855,66 @@ footer>div:nth-child(3)>i {
         /* -----END PRESENTATION----- */
 
         /* -----PRODUCERS----- */
-.gallery {
+
+#producers>div{
+    margin: 10em;
     display: grid;
-    grid-gap: 8px;
-    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
-    grid-auto-rows: 8px; 
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000;
-  }
-  
-  
-  @media (max-width: 600px) {
-      .gallery {
-          grid-template-columns: repeat(auto-fill, minmax(30%,1fr));
-      }
-  }
-  
-  @media (max-width: 400px) {
-      .gallery {
-          grid-template-columns: repeat(auto-fill, minmax(50%,1fr));
-      }
-  }
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    
+}
+#producers a img {
+    height: 100%;
+    width: 100%;
+}
 
-  .gallery-item img{
-    max-width: 100%;  
-    border-radius: 8px; 
- 
-  }
-  .content{    
-    padding: 4px;
-  }
+#producers a {
+    
+    transition: 0.2s;
+}
 
-  .gallery-item {    
-    transition: grid-row-start 300ms linear;  
-    transition: transform 300ms ease;   
-    cursor: pointer;
-  }
-  .gallery-item:hover {
-    transform: scale(1.025); 
-  }
-  .gallery-item img:hover{
-    box-shadow: 0 0 32px #333;
-  }
+#producers a:hover {
+    transform: scale(1.5);
+    box-shadow: 10px 10px 31px -7px rgba(0,0,0,0.51);
+-webkit-box-shadow: 10px 10px 31px -7px rgba(0,0,0,0.51);
+-moz-box-shadow: 10px 10px 31px -7px rgba(0,0,0,0.51);
+
+}
+#producers a:nth-child(1){
+    grid-column: 1/3;
+    grid-row: 1;
+    transform-origin: top left;
+}
+#producers a:nth-child(2){
+    grid-column: 3;
+    grid-row: 1;
+    transform-origin: top center;
+}
+#producers a:nth-child(3){
+    grid-column: 4;
+    grid-row: 1/3;
+    transform-origin: top right;
+}
+#producers a:nth-child(4){
+    grid-column: 1;
+    grid-row: 2/4;
+    transform-origin: bottom left;
+}
+#producers a:nth-child(5){
+    grid-column: 2/4;
+    grid-row: 2;
+}
+#producers a:nth-child(6){
+    grid-column: 2;
+    grid-row: 3;
+    transform-origin: bottom;
+}
+#producers a:nth-child(7){
+    grid-column: 3/5;
+    grid-row: 3;
+    transform-origin: bottom right;
+}
 
         /* -----END PRODUCERS----- */
 
