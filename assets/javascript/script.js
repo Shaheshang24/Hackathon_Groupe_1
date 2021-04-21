@@ -1,4 +1,4 @@
-// --- BurgerMenu ---
+// ----- BurgerMenu -----
 let burgerMenu = document.getElementById("burger");
 let topElement = document.getElementById("spantop");
 let centerElement = document.getElementById("spancenter");
@@ -18,8 +18,10 @@ burgerMenu.addEventListener("click", () => {
   menuElements.classList.toggle("menuopen");
 });
 
-// --- End Burger Menu ---
-// Slider product
+// ----- End Burger Menu -----
+
+// ----- Slider product -----
+
 var slidesp = document.querySelectorAll(".slide-product");
 var btnsp = document.querySelectorAll(".btn-product");
 let currentProduct = 1;
@@ -124,3 +126,34 @@ var repeat = function (activeClass) {
   repeater();
 };
 repeat();
+
+// ----- End Slider product -----
+
+// ----- Producers -----
+
+const gallery = document.querySelector(".gallery");
+const getVal = (elem, style) =>
+  parseInt(window.getComputedStyle(elem).getPropertyValue(style));
+const getHeight = (item) =>
+  item.querySelector(".content").getBoundingClientRect().height;
+
+const resizeAll = () => {
+  const altura = getVal(gallery, "grid-auto-rows");
+  const separacion = getVal(gallery, "grid-row-gap");
+  gallery.querySelectorAll(".gallery-item").forEach((item) => {
+    item.style.gridRowEnd = `span ${Math.ceil(
+      (getHeight(item) + separacion) / (altura + separacion)
+    )}`;
+  });
+};
+
+window.addEventListener("load", resizeAll);
+window.addEventListener("resize", resizeAll);
+
+gallery.querySelectorAll(".gallery-item").forEach((item) => {
+  item.addEventListener("click", function () {
+    gallery.removeChild(item);
+  });
+});
+
+// ----- End Producers -----
