@@ -1,3 +1,8 @@
+document.onload = function(){
+  document.getElementById('apple').style.display = 'none';
+  document.getElementById('page-content').style.display = 'block';
+}
+
 // ----- BurgerMenu -----
 let burgerMenu = document.getElementById("burger");
 let topElement = document.getElementById("spantop");
@@ -21,7 +26,6 @@ burgerMenu.addEventListener("click", () => {
 // ----- End Burger Menu -----
 
 // ----- Slider recipes -----
-// Slider recipes
 var slides = document.querySelectorAll(".slide");
 var btns = document.querySelectorAll(".btn");
 let currentSlide = 1;
@@ -74,6 +78,7 @@ var repeat = function (activeClass) {
 };
 repeat();
 
+// ----- End Slider recipes -----
 
 
 // Search Bar - PAGE RECETTES
@@ -129,3 +134,5 @@ function showSuggestions(list){
   }
   suggBox.innerHTML = listData; 
 }
+
+// ----- End Page recipes -----
