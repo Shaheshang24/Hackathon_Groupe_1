@@ -294,6 +294,11 @@ body {
 /************************/
 /* SECTION PAGE RECETTE */
 /************************/
+#title-page {
+    position: absolute;
+    top: 6%;
+    left: 47%;
+}
 .flex-search {
     display: flex;
     justify-content: center;
@@ -431,12 +436,25 @@ body {
 }
 
 /* MEDIA QUERIES PAGE RECIPES */
-@media (max-width: 780px) {
+@media (max-width: 1620px) {
+    #title-page {
+        left: 45%;
+    }
+}
+@media (max-width: 1440px) {
     .underpicture .pictorecipes img {
         width: 100px;
     }
+    #title-page {
+        left: 45%;
+    }
 }
 
+@media (max-width: 1024px) {
+    #title-page {
+        left: 43%;
+    }
+}
 @media (max-width: 780px) {
     .underpicture .pictorecipes img {
         width: 50px;
@@ -450,8 +468,27 @@ body {
     .flex-search {
         height: 30vh;
     }
+    #title-page {
+        left: 40%;
+    }
+}
+@media (max-width: 450px) {
+    #title-page {
+        left: 31%;
+    }
 }
 
+@media (max-width: 375px) {
+    #title-page {
+        left: 29%;
+    }
+}
+
+@media (max-width: 320px) {
+    #title-page {
+        left: 25%;
+    }
+}
 /***********************************/
 /***********************************/
 /***********************************/
