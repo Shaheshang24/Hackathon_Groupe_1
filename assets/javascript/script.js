@@ -1,3 +1,26 @@
+// ----- BurgerMenu -----
+let burgerMenu = document.getElementById("burger");
+let topElement = document.getElementById("spantop");
+let centerElement = document.getElementById("spancenter");
+let botElement = document.getElementById("spanbot");
+let menuElements = document.getElementById("nav");
+let homeButton = document.getElementById("homebutton");
+let homeMenu = document.getElementById("homemenu");
+console.log(homeMenu);
+
+burgerMenu.addEventListener("click", () => {
+  topElement.classList.toggle("spantopclose");
+  centerElement.classList.toggle("spancenterclose");
+  botElement.classList.toggle("spanbotclose");
+  topElement.classList.toggle("spantopopen");
+  centerElement.classList.toggle("spancenteropen");
+  botElement.classList.toggle("spanbotopen");
+  menuElements.classList.toggle("menuopen");
+});
+
+// ----- End Burger Menu -----
+
+// ----- Slider recipes -----
 // Slider recipes
 var slides = document.querySelectorAll(".slide");
 var btns = document.querySelectorAll(".btn");
@@ -24,32 +47,33 @@ btns.forEach((btn, i) => {
 });
 
 // JavaScript for slider automatic navigation
-var repeat = function(activeClass) {
-    let active = document.getElementsByClassName('active');
-    let i = 1;
+var repeat = function (activeClass) {
+  let active = document.getElementsByClassName("active");
+  let i = 1;
 
-    var repeater = () => {
-        setTimeout(function(){
-            [...active].forEach((activeSlide) => {
-                activeSlide.classList.remove('active');
-            })
+  var repeater = () => {
+    setTimeout(function () {
+      [...active].forEach((activeSlide) => {
+        activeSlide.classList.remove("active");
+      });
 
-            slides[i].classList.add('active');
-            btns[i].classList.add('active');
-            i++;
+      slides[i].classList.add("active");
+      btns[i].classList.add("active");
+      i++;
 
-            if(slides.length == i){
-                i = 0;
-            }
-            if(i >= slides.length){
-                return;
-            }
-            repeater();
-        }, 5000);
-    }
-    repeater();
-}
+      if (slides.length == i) {
+        i = 0;
+      }
+      if (i >= slides.length) {
+        return;
+      }
+      repeater();
+    }, 5000);
+  };
+  repeater();
+};
 repeat();
+
 
 
 // Search Bar - PAGE RECETTES
