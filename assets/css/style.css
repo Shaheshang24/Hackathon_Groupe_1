@@ -659,6 +659,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 /* -----END RECIPES----- */
 
 /* -----PARTNERS----- */
+
 #partners {
     display: flex;
     justify-content: center;
@@ -671,7 +672,6 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     width: 20%;
     margin: 5%;
 }
-
 
 /* -----END PARTNERS----- */
 
@@ -878,7 +878,7 @@ footer>div:nth-child(3)>i {
       }
   }
 
-  .produccers img{
+  .gallery-item img{
     max-width: 100%;  
     border-radius: 8px; 
  
@@ -903,7 +903,7 @@ footer>div:nth-child(3)>i {
 
         /* -----MAP----- */
 
-  .mapProd,h1 {
+  #map h2 {
       display:flex ;
       max-width: 70%;
       margin: 0 auto;
