@@ -1408,7 +1408,8 @@ footer>div:nth-child(3)>i {
 #title-page {
     position: absolute;
     top: 18%;
-    left: 47%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .flex-search {
@@ -1588,13 +1589,6 @@ p {
         margin-left: 251px;
     }
 
-}
-
-@media (max-width: 1620px) {
-    #title-page {
-        left: 45%;
-        top: 15%;
-    }
 
 }
 
@@ -1603,10 +1597,6 @@ p {
         width: 100px;
     }
 
-    #title-page {
-        left: 45%;
-        top: 18%;
-    }
 
     .ingredients h3 {
         margin-left: 179px;
@@ -1622,9 +1612,6 @@ p {
 }
 
 @media (max-width: 1024px) {
-    #title-page {
-        left: 43%;
-    }
 
     .ingredients h3 {
         margin-left: 119px;
@@ -1640,6 +1627,11 @@ p {
 }
 
 @media (max-width: 780px) {
+
+    #title-page {
+        top: 4em;
+    }
+
     .underpicture .pictorecipes img {
         width: 50px;
     }
@@ -1658,10 +1650,6 @@ p {
         margin-top: -65px;
     }
 
-    #title-page {
-        left: 40%;
-    }
-
     .ingredients h3 {
         margin-left: 75px;
     }
@@ -1671,18 +1659,16 @@ p {
     }
 
     .prep {
-        margin-left: 75px;
-    }
-}
-
-@media (max-width: 450px) {
-    #title-page {
-        left: 31%;
-        top: 12%;
+        margin-left:100px;
     }
 }
 
 @media (max-width: 425px) {
+
+    #title-page {
+        top: 2em;
+    }
+
     .search-input {
         width: 77%;
         margin-left: 20px;
@@ -1717,9 +1703,6 @@ p {
 }
 
 @media (max-width: 320px) {
-    #title-page {
-        left: 25%;
-    }
 
     .ingredients {
         padding-left: 3px;
