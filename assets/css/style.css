@@ -1004,6 +1004,7 @@ input#img-6:checked~.nav-dots label#img-dot-6 {
 		position: absolute;
 		font-size: 100pt;
 		top: 50%;
+        left: 29%;
 	 	transform: translateY(-50%);
 	}
 
@@ -1061,8 +1062,13 @@ input#img-6:checked~.nav-dots label#img-dot-6 {
 }		
 @media screen and (max-width: 425px){
     label span { 
-        margin-left: -9px;    
+        margin-left: 4px;    
 }
+}
+@media screen and (max-width: 768px){
+    label span {
+        left: 7%;
+    }
 }
 @media screen and (max-width: 685px){
 	.container{
@@ -1073,7 +1079,7 @@ input#img-6:checked~.nav-dots label#img-dot-6 {
 	}	
 	
 	label span { 
-        margin-left: -2px;
+        margin-left: 8px;
         font-size: 50pt; 
     }
 	
@@ -1087,6 +1093,7 @@ input#img-6:checked~.nav-dots label#img-dot-6 {
 }
 @media screen  and (min-width: 970px){
 	.me{ display: none;}
+
 }
 
 /* -----END RECIPES----- */
@@ -1497,7 +1504,7 @@ footer>div:nth-child(3)>i {
 }
 
 .titlerecipe img {
-    width: 70vw;
+    width: 50vw;
     text-align: center;
     padding-bottom: 50px;
 }
