@@ -127,11 +127,7 @@ var repeat = function (activeClass) {
 };
 repeat();
 
-// ----- End Slider product -----
 
-// ----- Producers -----
-
-// ----- End Producers -----
 
 // Search Bar - PAGE RECETTES
 let suggestions = [
