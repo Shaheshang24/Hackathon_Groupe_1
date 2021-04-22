@@ -1168,11 +1168,24 @@ input#img-6:checked~.nav-dots label#img-dot-6 {
 /* -----FOOTER----- */
 
 footer {
+    position: relative;
     background-image: url(../img/fond.jpg);
     background-size: cover;
     background-position-x: center;
     list-style-type: none;
     color: white;
+}
+
+footer>a {
+    font-size: 4em;
+    position: absolute;
+    right: 2em;
+    top: -2em;
+    
+}
+
+footer>a i{
+    color: #079B2D;
 }
 
 #logofooter {
@@ -1188,7 +1201,6 @@ footer a {
 }
 
 footer h2 {
-    margin: 0;
     padding: 1em;
 }
 
@@ -1240,14 +1252,28 @@ footer>div:nth-child(3)>i {
     margin: 10px;
 }
 
-
 /* -RESPONSIVE FOOTER- */
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1100px) {
+
+    footer>a {
+        font-size: 3em;
+        position: absolute;
+        right: 1em;
+        top: -1.5em;
+        
+    }
+
     footer>div:nth-child(2) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+
+    }
+
+    footer>div:nth-child(2)>div {
+    
+        margin: 0 auto;
 
     }
 
@@ -1270,38 +1296,20 @@ footer>div:nth-child(3)>i {
         grid-column: 2;
         grid-row: 2;
     }
-}
 
-@media screen and (max-width:1000px) {
-    footer>div:nth-child(2) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-
-    }
-
-    footer>div:nth-child(2)>div:nth-child(1) {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    footer>div:nth-child(2)>div:nth-child(2) {
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    footer>div:nth-child(2)>div:nth-child(3) {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    footer>div:nth-child(2)>div:nth-child(4) {
-        grid-column: 2;
-        grid-row: 2;
-    }
 }
 
 @media screen and (max-width:700px) {
+
+    footer>a {
+        font-size: 3em;
+        position: absolute;
+        right: 0.5em;
+        top: -1.5em;
+        
+    }
+
+
     footer>div:nth-child(2) {
         display: grid;
         grid-template-columns: 1fr;
@@ -1309,9 +1317,15 @@ footer>div:nth-child(3)>i {
 
     }
 
+    footer>div:nth-child(2) h2 {
+        
+            padding:1em 0 0 0 ;
+    }
+
     footer>div:nth-child(2)>div:nth-child(1) {
         grid-column: 1;
         grid-row: 1;
+        margin: auto auto;
     }
 
     footer>div:nth-child(2)>div:nth-child(2) {
@@ -1328,7 +1342,10 @@ footer>div:nth-child(3)>i {
         grid-column: 1;
         grid-row: 4;
     }
-    
+    footer>div:nth-child(3) {
+        padding: .2em;
+    }
+
 }
 
 /* -----END FOOTER----- */
