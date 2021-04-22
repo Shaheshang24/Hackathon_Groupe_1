@@ -1741,9 +1741,8 @@ p {
 /***********************************/
 /**************404*****************/
 /**********************************/
-.container {
+.container404 {
     background-image: url("/Hackathon_Groupe_1/assets/img/pesticides.jpg");
-
     background-size: cover;
     width: 100vw;
     height: 100vh;
