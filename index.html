@@ -19,24 +19,24 @@
         </div>
         <div class="logo">
             <img src="assets/img/logo.png" alt="Logo">
-            <span>Online Bio</span>
+            <span>Online <br> Bio</span>
         </div>
-        <ul class="menu">
+        <ul id="menu">
             <li id="home">
-                <span>Accueil</span>
+                <a href="#header">Accueil</a>
                 <!-- <ul class="sub-menu">
                     <li>Qui Sommes Nous?</li>
                     <li>Ou Livrons nous?</li>
                 </ul> -->
             </li>
             <li>
-                <span>Boutique</span>
+                <a href="https://www.online-bio.fr/">Boutique</a>
             </li>
             <li>
-                <span>Producteurs</span>
+                <a href="producteur.html">Producteurs</a>
             </li>
             <li>
-                <span>Recettes</span>
+                <a href="recettes.html">Recettes</a>
             </li>
         </ul>
     </nav>
@@ -45,7 +45,7 @@
 
     <!-- HEADER -->
 
-    <header>
+    <header id="header">
         <h1>Online Bio</h1>
         <video autoplay src="assets/video/video.mp4" loop width="100%"></video>
     </header>
@@ -64,7 +64,7 @@
             des fruits des légumes et produits d’épicerie biologiques.<br>
             Laurette et Jean sont deux Primeurs passionnés de la nature, désireux de pouvoir transmettre à leurs
             contemporains ce quelle à offrir de meilleur. <br>
-        
+
             <strong>Online Bio</strong> n’est pas seulement une société c’est un état d’esprit, une philosophie,
             un mode de vie qui se résume en trois petits mots qui peuvent avoir un immense impact sur notre
             environnent, et notre société : PRISE DE CONSCIENCE.
@@ -79,7 +79,9 @@
 
     <section id="producers">
         <img src="assets/img/producteurs.png" alt="" class="pict">
-        <h2>Nos Producteurs</h2>
+        <a href="producteur.html">
+            <h2 class="sectiontitle">Nos Producteurs</h2>
+        </a>
         <div>
             <a href=""><img src="assets/img/prod_2.jpg" alt="producteur"></a>
             <a href=""><img src="assets/img/prod_3.jpg" alt="producteur"></a>
@@ -96,18 +98,17 @@
     <!-- MAP -->
 
     <section id="map">
-        <img src="assets/img/map.png" alt="" class="pict">
-        <h2>Livraisons</h2>
+        <img src="assets/img/map.png" alt="Carte d'Ile de France" class="pict">
+        <h2 class="sectiontitle">Livraisons</h2>
         <div class="map">
-            <div>
-                <img class="mapTex" src="assets/img/idf.png" alt=""></div>
+            <img src="assets/img/idf.png" alt="">
             <div>
                 <h2>Conditions de livraisons</h2>
                 <p>
-                    Livraison exclusivement à domicile.<br>Jours de Livraison. <br> Du Lundi au Vendredi de 8h à
-                    18h.<br>Nos
-                    frais de livraisons
-                    sont calculés selon la distance entre notre société et le departement de
+                    Livraison exclusivement à domicile.<br>
+                    Jours de Livraison.<br>
+                    Du Lundi au Vendredi de 8h à18h.<br>
+                    Nos frais de livraisons sont calculés selon la distance entre notre société et le departement de
                     livraison.</p>
             </div>
         </div>
@@ -120,7 +121,7 @@
     <section id="products">
         <div class="title-product">
             <img src="./assets/img/pictoproduit.png" alt="picto produits" class="pict">
-            <h2>Nos produits</h2>
+            <h2 class="sectiontitle">Nos produits</h2>
         </div>
         <ul class="slides">
             <input type="radio" name="radio-btn" id="img-1" checked />
@@ -192,14 +193,13 @@
     <!-- END PRODUCTS -->
 
     <!-- RECIPES -->
-
+<!-- 
     <section class="recipes">
         <div class="title-recipes">
             <img src="./assets/img/pictocuisine.png" alt="picto cuisine" class="pict">
-            <h2 class="title">Recettes du jour</h2>
+            <h2 class="sectiontitle">Recettes du jour</h2>
         </div>
         <div class="slider-recipes">
-            <!-- Image slider start -->
             <div class="img-slider">
                 <div class="slide active">
                     <img src="./assets/img/capacciotomatesburrataechalotes.jpg" alt="Burrata">
@@ -239,9 +239,8 @@
                     <div class="btn"></div>
                 </div>
             </div>
-            <!-- Image slider end -->
         </div>
-    </section>
+    </section> -->
 
     <!-- END RECIPES -->
 

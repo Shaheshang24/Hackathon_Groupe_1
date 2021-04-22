@@ -3,7 +3,7 @@ let burgerMenu = document.getElementById("burger");
 let topElement = document.getElementById("spantop");
 let centerElement = document.getElementById("spancenter");
 let botElement = document.getElementById("spanbot");
-let menuElements = document.getElementById("nav");
+let menuElements = document.getElementById("menu");
 let homeButton = document.getElementById("homebutton");
 let homeMenu = document.getElementById("homemenu");
 console.log(homeMenu);
