@@ -1351,15 +1351,7 @@ footer>div:nth-child(3)>i {
     flex-direction: column;
     margin-right: 15%;
 }
-a:link {
-    text-decoration: none;
-}
-a:visited {
-    color: rgb(104, 214, 104);
-}
-a:hover {
-    color: saddlebrown;
-}
+
 /********/
 .para {
     max-width: 70%;
