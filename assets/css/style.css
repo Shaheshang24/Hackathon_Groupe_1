@@ -1125,8 +1125,8 @@ footer {
 footer>a {
     font-size: 4em;
     position: absolute;
-    right: 2em;
-    top: -2em;
+    right: 1em;
+    top: -1.1em;
 
 }
 
@@ -1206,7 +1206,7 @@ footer>div:nth-child(3)>i {
         font-size: 3em;
         position: absolute;
         right: 1em;
-        top: -1.5em;
+        top: -1.1em;
 
     }
 
@@ -1251,7 +1251,7 @@ footer>div:nth-child(3)>i {
         font-size: 3em;
         position: absolute;
         right: 0.2em;
-        top: -1.5em;
+        top: -1.1em;
 
     }
 
