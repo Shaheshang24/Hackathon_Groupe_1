@@ -16,7 +16,6 @@ body {
     background-image: url(../img/bg-accueil.jpg);
     background-size: cover;
     background-position-x: 10%;
-
 }
 
 .pict {
@@ -952,196 +951,142 @@ input#img-6:checked~.nav-dots label#img-dot-6 {
 /* -----END PRODUCTS----- */
 
 /* -----RECIPES----- */
+#i1, #i2, #i3, #i4 { display: none;}
 
-.recipes {
-    margin-top: 5em;
-    background: url(../img/backrecette.jpg);
-    background-size: cover;
-    background-position-x: center;
-    min-width: 911px;
-}
-
-.recipes .title-recipes {
+.title-recipes{
     text-align: center;
-    padding: 10px;
+    margin-top: 6em;
+}
+.title-recipes img{
+    width: 10%;
+}
+.title-recipes h2{
+    font-size: 4vw;
+}
+.container{
+		margin: 30px auto;
+		position: relative;
+		width: 50%;
+		height: 0;
+		padding-bottom: 38%;
+	    user-select: none;
+		background-color: #1c1c1c;
+		border-radius:10px ; 
+	}
+
+	.container .slide_img{
+		position: absolute;
+		width: 100%;;
+		height: 100%;
+	}
+	.container .slide_img img{
+		width: inherit;
+		height: inherit;
+	}
+
+	 .prev, .next{
+		width: 12%;
+		height: inherit;
+		position: absolute;
+		top:0; 
+		background-color: rgba(88, 88, 88,.2);
+		color:rgba(244, 244, 244,.9);
+		z-index: 99;
+		transition: .45s;
+		cursor: pointer;
+		text-align: center;
+	}
+
+	.next{right:0;}
+	.prev{left:0;}
+
+	label span{
+		position: absolute;
+		font-size: 100pt;
+		top: 50%;
+	 	transform: translateY(-50%);
+	}
+
+	.prev:hover, .next:hover{
+		transition: .3s;
+		background-color: rgba(88, 88, 89,.8);
+		color: #ffffff; 
+	}
+
+.container #nav_slide{
+	width: 100%;
+	bottom: 12%;
+	height: 11px;
+	position: absolute;
+	text-align: center;
+	z-index: 99;
+	cursor: default;
 }
 
-.slider-recipes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
+#nav_slide .dots{
+	top: -5px;
+	width: 18px;
+	height: 18px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: .4s;
 }
 
-.img-slider {
-    position: relative;
-    width: 800px;
-    height: 500px;
-    margin: 10px;
-    border-radius: 10px;
+#nav_slide .dots:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.9);
+	transition: .25s
 }
 
-.img-slider .slide {
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-    -webkit-clip-path: circle(0 at 0 50%);
-            clip-path: circle(0 at 0 50%);
+.slide_img{z-index: -1;}
+
+	#i1:checked ~ #one  ,
+	#i2:checked ~ #two  ,
+	#i3:checked ~ #three,
+	#i4:checked ~ #four 
+	{z-index: 9; animation: scroll 1s ease-in-out;}
+
+	#i1:checked  ~  #nav_slide #dot1,
+	#i2:checked  ~  #nav_slide #dot2,
+	#i3:checked  ~  #nav_slide #dot3,
+	#i4:checked  ~  #nav_slide #dot4
+	{ background-color: rgba(255,255,255,.9);}
+
+@keyframes scroll{
+	0%{	opacity:.4;}
+	100%{opacity:1;}
+}		
+@media screen and (max-width: 425px){
+    label span { 
+        margin-left: -9px;    
 }
-
-.img-slider .slide.active {
-    -webkit-clip-path: circle(150% at 0 50%);
-            clip-path: circle(150% at 0 50%);
-    transition: 2s;
-    transition-property: -webkit-clip-path;
-    transition-property: clip-path;
-    transition-property: clip-path, -webkit-clip-path;
 }
-
-.img-slider .slide img {
-    z-index: 1;
-    width: 100%;
-    border-radius: 5px;
+@media screen and (max-width: 685px){
+	.container{
+		border: none;
+		width: 65%;
+		height: 0;
+		padding-bottom: 55%; 
+	}	
+	
+	label span { 
+        margin-left: -2px;
+        font-size: 50pt; 
+    }
+	
+	.prev, .next{
+		width: 15%;
+	}	
+	#nav_slide .dots{
+		width: 12px;
+		height: 12px;
+	}
 }
-
-.img-slider .slide .info {
-    position: absolute;
-    top: 0;
-    padding: 15px 30px;
-}
-
-.img-slider .slide .info h2 {
-    color: #fff;
-    font-size: 45px;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
-
-.img-slider .slide .info p {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    width: 60%;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-.img-slider .navigation {
-    z-index: 2;
-    position: absolute;
-    display: flex;
-    bottom: -113px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.img-slider .navigation .btn {
-    background: rgba(255, 2255, 2255, 0.5);
-    width: 12px;
-    height: 12px;
-    margin: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.img-slider .navigation .btn.active {
-    background: #2696E9;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-}
-
-
-/* RESPONSIVE RECIPES */
-@media screen and(max-width: 820px) {
-    .slider-recipes {
-        width: 757px;
-    }
-
-    .recipes .title {
-        width: 758px;
-    }
-
-    .img-slider {
-        width: 600px;
-        height: 375px;
-    }
-
-    .img-slider .slide .info {
-        padding: 10px 25px;
-    }
-
-    .img-slider .slide .info h2 {
-        font-size: 35px;
-    }
-
-    .img-slider .slide .info p {
-        width: 70%;
-        font-size: 15px;
-    }
-
-    .img-slider .navigation {
-        bottom: -68px;
-    }
-
-    .img-slider .navigation .btn {
-        width: 10px;
-        height: 10px;
-        margin: 8px;
-    }
-}
-
-@media screen and(max-width: 620px) {
-    .img-slider {
-        width: 400px;
-        height: 250px;
-    }
-
-    .img-slider .slide .info {
-        padding: 10px 20px;
-    }
-
-    .img-slider .slide .info h2 {
-        font-size: 30px;
-    }
-
-    .img-slider .slide .info p {
-        width: 80%;
-        font-size: 13px;
-    }
-
-    .img-slider .navigation {
-        bottom: -44px;
-    }
-
-    .img-slider .navigation .btn {
-        width: 8px;
-        height: 8px;
-        margin: 6px;
-    }
-}
-
-@media screen and(max-width: 420px) {
-    .img-slider {
-        width: 320px;
-        height: 200px;
-    }
-
-    .img-slider .slide .info {
-        padding: 5px 10px;
-    }
-
-    .img-slider .slide .info h2 {
-        font-size: 25px;
-    }
-
-    .img-slider .slide .info p {
-        width: 90%;
-        font-size: 11px;
-    }
-
-    .img-slider .navigation {
-        bottom: -34px;
-    }
+@media screen  and (min-width: 970px){
+	.me{ display: none;}
 }
 
 /* -----END RECIPES----- */
@@ -1532,7 +1477,7 @@ footer>div:nth-child(3)>i {
     }
 
     .titlerecipe img {
-        width: 70vw;
+        width: 50vw;
         text-align: center;
         padding-bottom: 50px;
     }
