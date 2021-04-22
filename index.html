@@ -191,63 +191,61 @@
 
     <!-- END PRODUCTS -->
 
+    
     <!-- RECIPES -->
-
-    <!-- <section class="recipes">
+    <section>
         <div class="title-recipes">
-            <img src="./assets/img/pictocuisine.png" alt="picto cuisine" class="pict">
-            <h2 class="sectiontitle">Recettes du jour</h2>
+                <img src="./assets/img/pictocuisine.png" alt="picto cuisine">
+                <h2 class="title">Recettes du jour</h2>
         </div>
-        <div class="slider-recipes">
-            <div class="img-slider">
-                <div class="slide active">
-                    <img src="./assets/img/capacciotomatesburrataechalotes.jpg" alt="Burrata">
-                    <div class="info">
-                        <h2>Recette Carpaccio de tomates et burrata</h2>
-                        <p>La burrata est un fromage italien traditionnel à pâte fraîche filée de la cuisine
-                            italienne, originaire des Pouilles, à base de mozzarella remplie de crème.</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <img src="./assets/img/QuicheSaumonBrocolis.jpg" alt="Quiche">
-                    <div class="info">
-                        <h2>Recette Quiche Saumon Brocolis</h2>
-                        <p>Découvrez la recette de Tarte saumon brocolis à faire en 20 minutes.</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <img src="./assets/img/muhammara.jpg" alt="Muhammara">
-                    <div class="info">
-                        <h2>Muhammara</h2>
-                        <p>La Muhammara (محمرة ) qui est originaire de Syrie est une salade ou un dip à base de
-                            poivrons rouges, composée d’huile d’olive, cerneaux de noix, chapelure, ail, jus de
-                            citron et de mélasse de grenade.</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <img src="./assets/img/brochettesdelegumes.jpg" alt="Brochettes de Legumes">
-                    <div class="info">
-                        <h2>Brochettes de Légumes</h2>
-                        <p>Des brochettes aux légumes pour ensoleiller vos barbecues.</p>
-                    </div>
-                </div>
-                <div class="navigation">
-                    <div class="btn active"></div>
-                    <div class="btn"></div>
-                    <div class="btn"></div>
-                    <div class="btn"></div>
-                </div>
+        <div class="container">
+	
+            <input type="radio" id="i1" name="images" checked />
+            <input type="radio" id="i2" name="images" />
+            <input type="radio" id="i3" name="images" />
+            <input type="radio" id="i4" name="images" />	
+            
+            <div class="slide_img" id="one">			
+                    
+                    <img src="assets/img/QuicheSaumonBrocolis.jpg" alt="Quiche Saumon et Brocolis">
+                    
+                        <label class="prev" for="i5"><span>&#x2039;</span></label>
+                        <label class="next" for="i2"><span>&#x203a;</span></label>	
+                
             </div>
+            
+            <div class="slide_img" id="two">
+                
+                    <img src="assets/img/capacciotomatesburrataechalotes.jpg" alt="Carpaccio tomates et burrata" >
+                    
+                        <label class="prev" for="i1"><span>&#x2039;</span></label>
+                        <label class="next" for="i3"><span>&#x203a;</span></label>
+                
+            </div>
+                    
+            <div class="slide_img" id="three">
+                    <img src="assets/img/muhammara.jpg" alt="muhammara">	
+                    
+                        <label class="prev" for="i2"><span>&#x2039;</span></label>
+                        <label class="next" for="i4"><span>&#x203a;</span></label>
+            </div>
+        
+            <div class="slide_img" id="four">
+                    <img src="assets/img/brochettesdelegumes.jpg" alt="brochettes de Legumes">	
+                    
+                        <label class="prev" for="i3"><span>&#x2039;</span></label>
+                        <label class="next" for="i5"><span>&#x203a;</span></label>
+            </div>
+        
+            <div id="nav_slide">
+                <label for="i1" class="dots" id="dot1"></label>
+                <label for="i2" class="dots" id="dot2"></label>
+                <label for="i3" class="dots" id="dot3"></label>
+                <label for="i4" class="dots" id="dot4"></label>
+            </div>
+                
         </div>
-    </section> -->
-
-    <!-- END RECIPES -->
-
-    <!-- PARTNERS -->
-
-    <section id="partners">
-        <img src="assets/img/agriculture.jpg" alt="Logo Agriculture Biologique">
-        <img src="assets/img/demeter.png" alt="Logo Demeter">
+        
     </section>
 
     <!-- END PARTNERS -->
