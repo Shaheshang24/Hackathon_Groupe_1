@@ -1052,7 +1052,7 @@ input#img-6:checked~.nav-dots label#img-dot-6 {
 }
 
 
-RESPONSIVE RECIPES
+/* RESPONSIVE RECIPES */
 @media (max-width: 820px) {
     .slider-recipes {
         width: 757px;
@@ -1171,7 +1171,7 @@ RESPONSIVE RECIPES
 /* -----FOOTER----- */
 
 footer {
-    background-image: url(../img/backfooter.jpg);
+    background-image: url(../img/fond.jpg);
     background-size: cover;
     background-position-x: center;
     list-style-type: none;
