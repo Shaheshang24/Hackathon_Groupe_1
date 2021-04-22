@@ -16,6 +16,7 @@ body {
     background-image: url(../img/bg-accueil.jpg);
     background-size: cover;
     background-position-x: 10%;
+    scroll-behavior: smooth;
 }
 
 .pict {
@@ -94,11 +95,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 #menu li a {
 
     font-size: 3em;
+    transition: 0.1s;
 }
 
 #menu li:hover a {
