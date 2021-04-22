@@ -512,7 +512,7 @@ h1 {
 
 #presentation p {
     font-size: 1.5em;
-    margin: 2em 4vw;
+    margin: 2em 5em 2em 10vw;
     text-align: justify;
 }
 
@@ -1328,6 +1328,7 @@ footer>div:nth-child(3)>i {
         grid-column: 1;
         grid-row: 4;
     }
+    
 }
 
 /* -----END FOOTER----- */
@@ -1399,7 +1400,7 @@ footer>div:nth-child(3)>i {
     }
 }
 
-/* -----PRODUCTEUR.HTML-----*/
+/* -----END PRODUCTEUR.HTML-----*/
 
 
 /************************/
