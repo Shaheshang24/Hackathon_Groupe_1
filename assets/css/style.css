@@ -1345,7 +1345,8 @@ footer>div:nth-child(3)>i {
 .pro1 {
     width: 200px;
     height: 200px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 .row {
     display: flex;
@@ -1368,7 +1369,8 @@ footer>div:nth-child(3)>i {
 .deuxPics img  {
     width: 150px;
     height: 150px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .troisPics {
     display: flex;
@@ -1378,7 +1380,8 @@ footer>div:nth-child(3)>i {
 .troisPics img  {
     width: 150px;
     height: 150px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
    
 /*****media queries*****/
@@ -1408,7 +1411,7 @@ footer>div:nth-child(3)>i {
     /************************/
     #title-page {
         position: absolute;
-        top: 6%;
+        top: 18%;
         left: 47%;
     }
 
@@ -1516,7 +1519,7 @@ footer>div:nth-child(3)>i {
     }
 
     .ingredients {
-        background: #d6b07f;
+        background: #E8B071;
         padding-left: 40px;
         padding-right: 40px;
     }
@@ -1576,10 +1579,24 @@ footer>div:nth-child(3)>i {
     }
 
     /* MEDIA QUERIES PAGE RECIPES */
+    @media screen and (max-width: 2560px){
+        .ingredients h3 {
+            margin-left: 245px;
+        }
+        .ingredients .list {
+            margin-left: 240px;
+        }
+        .prep {
+            margin-left: 251px;
+        }
+        
+    }
     @media (max-width: 1620px) {
         #title-page {
             left: 45%;
+            top: 15%;
         }
+
     }
 
     @media (max-width: 1440px) {
@@ -1589,12 +1606,31 @@ footer>div:nth-child(3)>i {
 
         #title-page {
             left: 45%;
+            top: 18%;
+        }
+        .ingredients h3 {
+            margin-left: 179px;
+        }
+        .ingredients .list {
+            margin-left: 179px;
+        }
+        .prep {
+            margin-left: 179px;
         }
     }
 
     @media (max-width: 1024px) {
         #title-page {
             left: 43%;
+        }
+        .ingredients h3 {
+            margin-left: 119px;
+        }
+        .ingredients .list {
+            margin-left: 119px;
+        }
+        .prep {
+            margin-left: 119px;
         }
     }
 
@@ -1614,28 +1650,70 @@ footer>div:nth-child(3)>i {
 
         .flex-search {
             height: 30vh;
+            margin-top: -65px;
         }
 
         #title-page {
             left: 40%;
+        }
+        .ingredients h3 {
+            margin-left: 75px;
+        }
+        .ingredients .list {
+            margin-left: 75px;
+        }
+        .prep {
+            margin-left: 75px;
         }
     }
 
     @media (max-width: 450px) {
         #title-page {
             left: 31%;
+            top: 12%;
         }
     }
-
+    @media (max-width: 425px) {
+        .search-input {
+            width: 77%;
+            margin-left: 20px;
+        }
+        .ingredients h3 {
+            margin-left: 50px;
+        }
+        .ingredients .list {
+            margin-left: 50px;
+        }
+        .prep {
+            margin-left: 50px;
+        }
+        .titlerecipe h2 {
+            margin-left: 64px;
+        }
+    }
+    
     @media (max-width: 375px) {
         #title-page {
             left: 29%;
+        }
+        .search-input {
+            width: 77%;
+            margin-left: 1px;
         }
     }
 
     @media (max-width: 320px) {
         #title-page {
             left: 25%;
+        }
+        .ingredients {
+            padding-left: 3px;
+        }
+        .underpicture {
+            padding: 85px;
+        }
+        .titlerecipe h2 {
+            margin-left: 39px;
         }
     }
 
