@@ -11,82 +11,87 @@
 </head>
 
 <body>
-    <section class="section-loadingpage" id="apple">
-        <span class="loader loader-apple"></span>
-    </section>
-    <section class="page-content">
-        <!-- NAVBAR -->
-        <nav id="nav">
-            <div id="burger">
-                <span id="spantop" class="spantopclose"></span>
-                <span id="spancenter" class="spancenterclose"></span>
-                <span id="spanbot" class="spanbotclose"></span>
-            </div>
-            <img src="assets/img/logo.png" alt="Logo" id="logo">
-            <ul class="menu">
-                <li id="home">
-                    Accueil
-                    <!-- <ul class="sub-menu">
+    <nav id="nav">
+        <div id="burger">
+            <span id="spantop" class="spantopclose"></span>
+            <span id="spancenter" class="spancenterclose"></span>
+            <span id="spanbot" class="spanbotclose"></span>
+        </div>
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="Logo">
+            <span>Online <br> Bio</span>
+        </div>
+        <ul id="menu">
+            <li id="home">
+                <a href="#header">Accueil</a>
+                <!-- <ul class="sub-menu">
                     <li>Qui Sommes Nous?</li>
                     <li>Ou Livrons nous?</li>
                 </ul> -->
-                </li>
-                <li>
-                    Boutique
-                </li>
-                <li>
-                    Producteurs
-                </li>
-                <li>
-                    Recettes
-                </li>
-            </ul>
-        </nav>
+            </li>
+            <li>
+                <a href="https://www.online-bio.fr/">Boutique</a>
+            </li>
+            <li>
+                <a href="producteur.html">Producteurs</a>
+            </li>
+            <li>
+                <a href="recettes.html">Recettes</a>
+            </li>
+        </ul>
+    </nav>
 
-        <!-- END NAVBAR -->
+    <!-- END NAVBAR -->
 
-        <!-- HEADER -->
+    <!-- HEADER -->
 
-        <header>
-            <h1>Online Bio</h1>
-            <video autoplay src="assets/video/video.mp4" loop width="100%"></video>
-        </header>
+    <header id="header">
+        <h1>Online Bio</h1>
+        <video autoplay src="assets/video/video.mp4" loop width="100%"></video>
+    </header>
 
-        <!-- HEADER -->
+    <!-- HEADER -->
 
-        <!-- PRESENTATION -->
+    <!-- PRESENTATION -->
 
-        <section class="presentation">
-            <p><strong>Online Bio</strong> est une société implantée en région ile de France, dont l’activité est de
-                vendre
-                des fruits des légumes et produits d’épicerie biologiques.<br>
-                Laurette et Jean sont deux Primeurs passionnés de la nature, désireux de pouvoir transmettre à leurs
-                contemporains ce quelle à offrir de meilleur.</p>
-            <p><strong>Online Bio</strong> n’est pas seulement une société c’est un état d’esprit, une philosophie,
-                un mode de vie qui se résume en trois petits mots qui peuvent avoir un immense impact sur notre
-                environnent, et notre société : PRISE DE CONSCIENCE.
-                Nos valeurs se résument en celle-ci c’est pour cela que nous faisons appel et collaborons
-                avec des producteurs qui s’inscrivent dans cette démarche.
-                <p>
-        </section>
+    <section id="presentation">
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="">
+            <span>Online<br>Bio</span>
+        </div>
+        <p><strong>Online Bio</strong> est une société implantée en région ile de France, dont l’activité est de
+            vendre
+            des fruits des légumes et produits d’épicerie biologiques.<br>
+            Laurette et Jean sont deux Primeurs passionnés de la nature, désireux de pouvoir transmettre à leurs
+            contemporains ce quelle à offrir de meilleur. <br>
 
-        <!-- END PRESENTATION -->
+            <strong>Online Bio</strong> n’est pas seulement une société c’est un état d’esprit, une philosophie,
+            un mode de vie qui se résume en trois petits mots qui peuvent avoir un immense impact sur notre
+            environnent, et notre société : PRISE DE CONSCIENCE.
+            Nos valeurs se résument en celle-ci c’est pour cela que nous faisons appel et collaborons
+            avec des producteurs qui s’inscrivent dans cette démarche.
+            <p>
+    </section>
 
-        <!-- PRODUCERS -->
+    <!-- END PRESENTATION -->
 
-        <section id="producers">
-            <img src="asstes/" alt="">
-            <h2>Nos Producteurs</h2>
-            <div>
-                <a href=""><img src="assets/img/prod_2.jpg" alt="producteur"></a>
-                <a href=""><img src="assets/img/prod_3.jpg" alt="producteur"></a>
-                <a href=""><img src="assets/img/prod_1.jpg" alt="producteur"></a>
-                <a href=""><img src="assets/img/prod_7.jpg" alt="producteur"></a>
-                <a href=""><img src="assets/img/prod_6.jpg" alt=""></a>
-                <a href=""><img src="assets/img/prod_4.jpg" alt=""></a>
-                <a href=""><img src="assets/img/prod_5.jpg" alt=""></a>
-            </div>
-        </section>
+    <!-- PRODUCERS -->
+
+    <section id="producers">
+        <img src="assets/img/producteurs.png" alt="" class="pict">
+        <a href="producteur.html">
+            <h2 class="sectiontitle">Nos Producteurs</h2>
+        </a>
+        <div>
+            <a href=""><img src="assets/img/prod_2.jpg" alt="producteur"></a>
+            <a href=""><img src="assets/img/prod_3.jpg" alt="producteur"></a>
+            <a href=""><img src="assets/img/prod_1.jpg" alt="producteur"></a>
+            <a href=""><img src="assets/img/prod_7.jpg" alt="producteur"></a>
+            <a href=""><img src="assets/img/prod_6.jpg" alt=""></a>
+            <a href=""><img src="assets/img/prod_4.jpg" alt=""></a>
+            <a href=""><img src="assets/img/prod_5.jpg" alt=""></a>
+        </div>
+    </section>
 
         <!-- END PRODUCERS -->
 
@@ -111,26 +116,25 @@
 
         <!-- PRODUCTS -->
 
-        <section id="products">
-            <div class="title-product">
-                <img src="./assets/img/pictoproduit.png" alt="picto produits">
-                <h2>Nos produits</h2>
-            </div>
-            <ul class="slides">
-                <input type="radio" name="radio-btn" id="img-1" checked />
-                <li class="slide-container">
-                    <div class="slider">
-                        <div class="content">
-                            <h3>Les Amandes</h3>
-                            <h4>de Provence</h4>
-                            <p>Cultivées sous le soleil des maquis provençaux, les amandes bio apporteront du croquant a
-                                vos salade et de la saveur à vos desserts.... </p>
-                            <div class="polaroids">
-                                <a href="https://www.online-bio.fr/product-category/epicerie/" title="Amandes">
-                                    <img src="assets/img/Amandes2.jpg" alt="Amandes" />
-                                    <h4>Amandes</h4>
-                                </a>
-                            </div>
+    <section id="products">
+        <div class="title-product">
+            <img src="./assets/img/pictoproduit.png" alt="picto produits" class="pict">
+            <h2 class="sectiontitle">Nos produits</h2>
+        </div>
+        <ul class="slides">
+            <input type="radio" name="radio-btn" id="img-1" checked />
+            <li class="slide-container">
+                <div class="slider">
+                    <div class="content">
+                        <h3>Les Amandes</h3>
+                        <h4>de Provence</h4>
+                        <p>Cultivées sous le soleil des maquis provençaux, les amandes bio apporteront du croquant a
+                            vos salade et de la saveur à vos desserts.... </p>
+                        <div class="polaroids">
+                            <a href="https://www.online-bio.fr/product-category/epicerie/" title="Amandes">
+                                <img src="assets/img/Amandes2.jpg" alt="Amandes" />
+                                <h4>Amandes</h4>
+                            </a>
                         </div>
                     </div>
                     <div class="nav">
@@ -188,10 +192,9 @@
     <section class="recipes">
         <div class="title-recipes">
             <img src="./assets/img/pictocuisine.png" alt="picto cuisine" class="pict">
-            <h2 class="title">Recettes du jour</h2>
+            <h2 class="sectiontitle">Recettes du jour</h2>
         </div>
         <div class="slider-recipes">
-            
             <div class="img-slider">
                 <div class="slide active">
                     <img src="./assets/img/capacciotomatesburrataechalotes.jpg" alt="Burrata">
@@ -260,9 +263,8 @@
                 </div>
                 <!-- Image slider end -->
             </div>
-            
         </div>
-    </section>
+    </section> -->
 
         <!-- END RECIPES -->
 
