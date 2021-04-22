@@ -1332,3 +1332,243 @@ footer>div:nth-child(3)>i {
 }
 
 /* -----END FOOTER----- */
+
+/************************/
+    /* SECTION PAGE RECETTE */
+    /************************/
+    #title-page {
+        position: absolute;
+        top: 6%;
+        left: 47%;
+    }
+
+    .flex-search {
+        display: flex;
+        justify-content: center;
+    }
+
+    .wrapper {
+        max-width: 450px;
+        margin: 150px auto;
+    }
+
+    .wrapper .search-input {
+        position: relative;
+        background: #fff;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+    }
+
+    .search-input input {
+        height: 55px;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        padding: 0 60px 0 20px;
+        font-size: 18px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-input .icon {
+        height: 55px;
+        width: 55px;
+        line-height: 55px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: center;
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.582);
+        cursor: pointer;
+    }
+
+    .search-input .dropdown {
+        padding: 0px;
+        max-height: 280px;
+        overflow-y: auto;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .search-input.active .dropdown {
+        padding: 10px 8px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .dropdown li {
+        list-style: none;
+        padding: 8px 12px;
+        width: 100%;
+        cursor: default;
+        border-radius: 3px;
+        display: none;
+    }
+
+    .search-input.active .dropdown li {
+        display: block;
+    }
+
+    .dropdown li:hover {
+        background: #efefef;
+    }
+
+    .titlerecipe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titlerecipe h2 {
+        letter-spacing: 2px;
+        padding-bottom: 15px;
+    }
+
+    .titlerecipe img {
+        width: 70vw;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .underpicture {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 50px;
+        flex-wrap: wrap;
+    }
+
+    .underpicture h3,
+    p {
+        text-align: center;
+    }
+
+    .ingredients {
+        background: #d6b07f;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .ingredients h3 {
+        padding: 20px;
+        font-weight: 500;
+    }
+
+    .pictorecipes {
+        text-align: center;
+    }
+
+    .list ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .list li {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        justify-content: space-evenly;
+    }
+
+    .list li img {
+        height: 70px;
+    }
+
+    .list li p {
+        padding-left: 10px;
+    }
+
+    #fish {
+        width: 125px;
+    }
+
+    .prep {
+        padding: 40px;
+    }
+
+    .prep h3 {
+        padding: 20px;
+        font-weight: 500;
+    }
+
+    .prep h4 {
+        font-weight: 700;
+        padding: 5px;
+    }
+
+    .prep p {
+        text-align: start;
+        padding-bottom: 10px;
+    }
+
+    /* MEDIA QUERIES PAGE RECIPES */
+    @media (max-width: 1620px) {
+        #title-page {
+            left: 45%;
+        }
+    }
+
+    @media (max-width: 1440px) {
+        .underpicture .pictorecipes img {
+            width: 100px;
+        }
+
+        #title-page {
+            left: 45%;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        #title-page {
+            left: 43%;
+        }
+    }
+
+    @media (max-width: 780px) {
+        .underpicture .pictorecipes img {
+            width: 50px;
+        }
+
+        .pictorecipes h3,
+        p {
+            font-size: 10px;
+        }
+
+        .list li img {
+            height: 40px;
+        }
+
+        .flex-search {
+            height: 30vh;
+        }
+
+        #title-page {
+            left: 40%;
+        }
+    }
+
+    @media (max-width: 450px) {
+        #title-page {
+            left: 31%;
+        }
+    }
+
+    @media (max-width: 375px) {
+        #title-page {
+            left: 29%;
+        }
+    }
+
+    @media (max-width: 320px) {
+        #title-page {
+            left: 25%;
+        }
+    }
+
+    /***********************************/
+    /***********************************/
+    /***********************************/
